@@ -15,13 +15,17 @@
             $result =$this->db->query("INSERT INTO libros(ISBN,Titulo,Fecha_publicacion,Autor,Categoria,Reseña,Edicion,Editorial) VALUES('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')");
         }
 
+        //funcion eliminar 
         public function delete_libro($id) { //ID
             $query = "DELETE FROM libros where ID = ${id}";
             $resultado = mysql_query($db, $query);
     
     
         }
+
+        //agregando accion eliminar
     
+
     }
 
      
