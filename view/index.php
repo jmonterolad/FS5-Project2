@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kindom Book</tittle>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<?php
+include "resources/includes/header.php"
+?>
 
 
-</body>
-</html>
+
+
+<?php
+include "resources/includes/footer.php";
+?>
