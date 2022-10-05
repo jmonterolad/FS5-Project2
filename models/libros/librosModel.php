@@ -23,9 +23,10 @@
     
         }
 
-        //agregando accion eliminar
-    
+       public function delete_usuarios($id) {
 
+    
+    }
     }
 
      
