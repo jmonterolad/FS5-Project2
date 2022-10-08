@@ -23,10 +23,10 @@
     
         }
 
-       public function delete_usuarios($id) {
+    
 
     
-    }
+    
     }
 
      
