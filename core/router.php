@@ -4,7 +4,7 @@
         $archivoControlador = 'Controllers/'.$controlador.'.php';
 
         if(!is_file($archivoControlador)){
-            $archivoControlador = 'controllers/'.CONTROLADOR_PRINCIPAL.'.php';
+            $archivoControlador = 'Controllers/'.CONTROLADOR_PRINCIPAL.'.php';
 
         }
         //echo $archivoControlador;
