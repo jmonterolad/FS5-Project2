@@ -19,11 +19,11 @@ include "../resources/includes/header.php";
                 <tr class="">
                     <td scope="row">001</td>
                     <td scope="row">EL PRINCIPITO</td>
-                    <td scope="row"</td>
                     <td scope="row">001</td>
                     <td scope="row">001</td>
                     <td scope="row">001</td>
-                    
+                    <td scope="row">001</td>
+
                 </tr>
                 <tr class="">
                     <td scope="row">Item</td>
@@ -33,5 +33,5 @@ include "../resources/includes/header.php";
             </tbody>
         </table>
     </div>
-    
+
 </main>
