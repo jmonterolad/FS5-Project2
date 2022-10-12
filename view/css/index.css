@@ -59,33 +59,6 @@
     width: 100%;
    }
    
-   
-   /* .nav {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-    z-index: 10;
-   }
-   
-   .nav-list {
-    display: flex;
-    margin-right: 2rem;
-   }
-   .nav-list a {
-    display: block;
-    font-size: 2.2rem;
-    padding: 2rem;
-   }
-   
-   .nav-list a:hover {
-    background: var(--main-blue);
-    transition: all .5s;
-   } */
    .header {
     display: flex;
     flex-direction: column;
@@ -106,7 +79,7 @@
    .libros-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: #33CCCC;
+    background: #979C9E;
    }
    
    .libros-section-header {
@@ -186,7 +159,7 @@
     transform: translateX(0);
     transition: transform 0.3s ease-out;
    }
-   .relationships {
+   /* .relationships {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -208,9 +181,9 @@
     max-width: 980px;
     margin-top: 4rem;
     flex-wrap: wrap;
-   }
+   } */
    
-   .contact-details {
+   /* .contact-details {
     font-size: 2.4rem;
     text-shadow: 2px 2px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
@@ -235,4 +208,4 @@
    .footer-p{
    margin: 2rem;
    color: #4dff00;
-   }
+   } */

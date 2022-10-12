@@ -1,92 +1,120 @@
-<!-- <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Crear un nuevo libro</h1>
-    <form name = "nuevo" id = "nuevo"  action="index.php?c=Libros&a=guardar" method="POST">
-        <input type="text" name="titulo" id="titulo" placeholder="Ingresar el titulo del libro..">
-        <input type="text" name="autor" id="autor" placeholder="Ingresar el nombre del autor..">
-        <input type="date" name="fecha_Publicidad" id="fecha_publicidad">
-        <input type="text" name="categoria" id="categoria" placeholder="Ingresar la categoria del libro" ..>
-        <input type="text" name="reseña" id="reseña" placeholder="Ingresar la reseña del libro..">
-        <input type="text" name="edicion" id="edicion" placeholder="Ingresar la edicion del libro..">
-        <input type="text" name="editorial" id="editorial" placeholder="Ingresar la editorial del libro" ..>
-
-        //validacion para usar mascara de 6 digitos o 13 dudas consultar : Rodrigo
-        //pre 2007
-        <input type="number" name="ISB" placeholder="Ingresar el ISB.." data-inputmask: "9-9999-9999-9">
-        //post2007
-        <input type="number" name="ISB" placeholder="Ingresar el ISB.." data-inputmask:"999-9-99-999999-9">
-        <input type="submit" value="Submit">
-    </form>
-</body>
-
-</html> -->
-
-
-<?php include 'resources/includes/header.php'; ?>
+<?php include 'view/resources/includes/header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="view/css/create.css">
-    <title>Ingresa un libro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="view/css/index.css">
 </head>
 
-<body>
-    <div class="section">
-        <h1>Ingresa los datos del libro</h1><br><br>
-      
-        <form class="form-label form-css-label" method = "POST" action="index.php?c=Libros&a=guardar" autocomplete = "off">
-          <fieldset>
-            <input id="ISBN" name="ISBN" type="text" autocomplete="off" required />
-            <label for="ISBN">ISBN</label>
-          </fieldset>
-          <fieldset>
-            <input id="Titulo" name="Titulo" type="text" autocomplete="off" required />
-            <label for="Titulo">Titulo</label>
-          </fieldset>
-          <fieldset>
-            <input id="Fecha_publicacion" name="Fecha_publicacion" type="text" autocomplete="off" required />
-            <label for="Fecha_publicacion">Fecha publicacion</label>
-          </fieldset>
-          <fieldset>
-            <input id="Autor" name="Autor" type="text" autocomplete="off" required />
-            <label for="Autor">Autor</label>
-          </fieldset>
-          <fieldset>
-            <input id="Categoria" name="Categoria" type="text" autocomplete="off" required />
-            <label for="Categoria">Categoria</label>
-          </fieldset>
-          <fieldset>
-            <input id="Reseña" name="Reseña" type="text" autocomplete="off" required />
-            <label for="Reseña">Reseña</label>
-          </fieldset>
-          <fieldset>
-            <input id="Edicion" name="Edicion" type="text" autocomplete="off" required />
-            <label for="Edicion">Edicion</label>
-          </fieldset>
-          <fieldset>
-            <input id="Editorial" name="Editorial" type="text" autocomplete="off" required />
-            <label for="Editorial">Editorial</label>
-          </fieldset>
-        </form>
-        <div class="wrap">
-            <button class="btn">button</button>
-          </div>
-      </div>
+<body translate="no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+  <section id="libros-id" class="libros-section">
+    <h2 class="libros-section-header">Inventario de libros</h2>
+
+    <div class="libros-grid">
+        <table>
+            <thead>
+                <tr>
+                    <th>ISBN</th>
+                    <th>Titulo</th>
+                    <th>Fecha de publicacion</th>
+                    <th>Autor</th>
+                    <th>Categoria</th>
+                    <th>Reseña</th>
+                    <th>Edicion</th>
+                    <th>Editorial</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                    foreach($data["libros"] as $data){
+                        echo "<tr>";
+                        echo "<td>".$data["ISBN"]."</td>";
+                        echo "<td>".$data["Titulo"]."</td>";
+                        echo "<td>".$data["Fecha_publicacion"]."</td>";
+                        echo "<td>".$data["Autor"]."</td>";
+                        echo "<td>".$data["Categoria"]."</td>";
+                        echo "<td>".$data["Reseña"]."</td>";
+                        echo "<td>".$data["Edicion"]."</td>";
+                        echo "<td>".$data["Editorial"]."</td>";
+                        echo "</tr>";
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="libros-grid">
+      <a href="https://codepen.io/codepen-io-mark_shchupak/pen/jOmrVqX" target="_blank" class="libros libros-tile">
+        <img class="libros-image"
+          src="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.6435-9/118187669_1667736396735744_1852354351492205892_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Gj52YBWKEQYAX_ZehEC&_nc_ht=scontent.flwo3-1.fna&oh=d17cdcdf3ce153287c2088cff7c10b17&oe=60ECC35B"
+          alt="libro" />
+        <p class="libros-title">
+          <span class="code">&lt;</span>
+          Tribute Page
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/codepen-io-mark_shchupak/pen/MWmexVJ" target="_blank" class="libros libros-tile">
+        <img class="libros-image"
+          src="https://fckarpaty.com/wp-content/uploads/content/gallery/2020/02/p1e1uc3f5p2qf1o2042n1lab1smd4.jpg"
+          alt="libro" />
+        <p class="libros-title">
+          <span class="code">&lt;</span>
+          FC Karpaty
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/codepen-io-mark_shchupak/pen/MWmexVJ" target="_blank" class="libros libros-tile">
+        <img class="libros-image" src="https://boothype.com/wp-content/uploads/2021/04/black-football-boots.jpg"
+          alt="libro" />
+        <p class="libros-title">
+          <span class="code">&lt;</span>
+          Football Boots
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/wizly/pen/BlKxo" target="_blank" class="libros libros-tile">
+        <img class="libros-image" src="https://getbootstrap.com/docs/5.0/assets/img/bootstrap-icons.png"
+          alt="libro" />
+        <p class="libros-title">
+          <span class="code">&lt;</span>
+          Bootstrap
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/codepen-io-mark_shchupak/pen/dyWXBXm" target="_blank" class="libros libros-tile">
+        <img class="libros-image" src="https://cssreference.io/images/css-reference-share.png" alt="libro" />
+        <p class="libros-title">
+          <span class="code">&lt;</span>
+          CSS Reference
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a href="https://codepen.io/iliadraznin/pen/JcqbE" target="_blank" class="libros libros-tile">
+        <img class="libros-image" src="https://frontbackend.com/storage/css-clocks-post/css3-working-clock.gif"
+          alt="libro" />
+        <p class="libros-title">
+          <span class="code">&lt;</span>
+          Working Clock
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+
+    <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i
+        class="fas fa-chevron-right"></i></a>
+  </section>
+
 </body>
 
 </html>
-
-<!-- <?php include 'resources/includes/footer.php'; ?> -->
