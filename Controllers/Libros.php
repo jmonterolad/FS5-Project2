@@ -1,7 +1,7 @@
 <?php
 class librosclass{
     public function __construct(){
-        require_once "models/librosModel.php";
+        require "models/librosModel.php";
     }
 
     //funcion vista crear

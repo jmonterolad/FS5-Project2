@@ -6,5 +6,4 @@
 
     //Almacenar mi acción (representa la "a")
     define("ACCION_PRINCIPAL", "index");
-
 ?>

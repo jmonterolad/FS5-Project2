@@ -23,7 +23,7 @@
         <input type="number" name="ISB" placeholder="Ingresar el ISB.." data-inputmask: "9-9999-9999-9">
         //post2007
         <input type="number" name="ISB" placeholder="Ingresar el ISB.." data-inputmask:"999-9-99-999999-9">
-        <input type="submit" value="Submite">
+        <input type="submit" value="Submit">
     </form>
 </body>
 
