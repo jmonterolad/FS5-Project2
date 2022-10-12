@@ -1,12 +1,20 @@
 <?php
-class librosclass{
+class LibrosController{
     public function __construct(){
-        require "models/librosModel.php";
+        require_once "models/libros/librosModel.php";
     }
 
-    //funcion vista crear
+    // Funcion de vista
+    public function index(){
+        $objLibro = new Libros_Model();
+        $data["libros"] = $objLibro->get_Libros();
+
+        require_once "view/libros_mostrar.php";
+    }
+
+    //Funcion vista crear
     public function nuevo(){
-        require_once "view/libros/librosMostrar.php";
+        require_once "view/librosMostrar.php";
     }
 
     public function guardar(){

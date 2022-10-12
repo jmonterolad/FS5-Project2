@@ -1,15 +1,15 @@
 <?php 
     class Libros_Model{
         private $db;
-        private $libro;
+        private $libros;
         
 
         public function __construct(){
             $this->db = Conectar::Conexion();
-            $this->libro = array();
+            $this->libros = array();
         }
 
-        // Consulta de base de datos
+        // Consulta a base de datos
         public function get_Libros(){
             $query = "SELECT * FROM libros";
             $result = $this->db->query($query);
