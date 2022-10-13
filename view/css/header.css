@@ -32,7 +32,7 @@ nav{
     justify-content: space-between;
 }
 nav a{
-    font-size: 1.8rem;
+    font-size: 15px;
     color: #333;
     letter-spacing: 0.1em;
     text-decoration: none;
