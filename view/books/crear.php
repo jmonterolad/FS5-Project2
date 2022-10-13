@@ -26,7 +26,7 @@
 
         <form class="form-label form-css-label" method="POST" action="../../index.php?c=Libros&a=guardar" autocomplete="off">
             <fieldset>
-                <input id="ISBN" name="ISBN" type="number" autocomplete="off" required />
+                <input class="input-inicial" id="ISBN" name="ISBN" type="number" autocomplete="off" required />
                 <label for="ISBN">ISBN</label>
             </fieldset>
             <fieldset>
@@ -54,15 +54,13 @@
                 <label for="Edicion">Edicion</label>
             </fieldset>
             <fieldset>
-                <input id="Editorial" name="Editorial" type="text" autocomplete="off" required />
+                <input class="input-final" id="Editorial" name="Editorial" type="text" autocomplete="off" required />
                 <label for="Editorial">Editorial</label>
             </fieldset>
             <br> <br>
 
             <div class="wrap">
-                <div>
-                <input class="btn" type="submit" value="send" name="Submit">
-                </div>
+                <input class="btn" type="submit" value="Crear" name="Submit">
             </div>
         </form>
     </div>
