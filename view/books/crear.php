@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/header.css">
     <title>Ingresa un libro</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,14 +19,15 @@
             <div class="etiqueta">
                 <a class="link" href="../../index.php">INICIO</a>
                 <a class="link" href="#">AGREGAR</a>
-                <a class="link" href="manage.php">ADMINISTRAR</a>
+                <!-- <a class="link" href="manage.php">ADMINISTRAR</a> -->
             </div>
         </nav>
     </header>
     <div class="section">
         <h1>Ingresa los datos del libro</h1><br><br>
 
-        <form class="form-label form-css-label" method="POST" action="../../index.php?c=Libros&a=guardar" autocomplete="off">
+        <form class="form-label form-css-label" method="POST" action="../../index.php?c=Libros&a=guardar"
+            autocomplete="off">
             <fieldset>
                 <input class="input-inicial" id="ISBN" name="ISBN" type="number" autocomplete="off" required />
                 <label for="ISBN">ISBN</label>
