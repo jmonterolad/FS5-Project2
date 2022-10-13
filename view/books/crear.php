@@ -1,5 +1,3 @@
-<?php include 'view/resources/includes/header.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,17 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="view\css\create.css">
-    <title>Create an entry</title>
+    <link rel="stylesheet" href="../../css/create.css">
+    <title>Ingresa un libro</title>
 </head>
 
 <body>
     <div class="section">
         <h1>Ingresa los datos del libro</h1><br><br>
 
-        <form class="form-label form-css-label" method="POST" action="index.php?c=Libros&a=guardar" autocomplete="off">
+        <form class="form-label form-css-label" method="POST" action="../../../index.php?c=libros&a=guardar"
+            autocomplete="off">
             <fieldset>
-                <input id="ISBN" name="ISBN" type="text" autocomplete="off" required />
+                <input id="ISBN" name="ISBN" type="number" autocomplete="off" required />
                 <label for="ISBN">ISBN</label>
             </fieldset>
             <fieldset>
@@ -48,13 +47,12 @@
                 <input id="Editorial" name="Editorial" type="text" autocomplete="off" required />
                 <label for="Editorial">Editorial</label>
             </fieldset>
+
+            <div class="wrap">
+                <input class="btn" type="submit" value="Submite">
+            </div>
         </form>
-        <div class="wrap">
-            <button class="btn">button</button>
-        </div>
     </div>
 </body>
 
 </html>
-
-<?php include 'view/resources/includes/footer.php'; ?>
