@@ -9,7 +9,7 @@ class LibrosController{
         $objLibro = new Libros_Model();
         $data["libros"] = $objLibro->get_Libros();
 
-        require_once "view/libros_mostrar.php";
+        require_once "view/books/libros_mostrar.php";
     }
 
     //Funcion vista crear
