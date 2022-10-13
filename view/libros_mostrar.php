@@ -53,7 +53,7 @@
         </table>
     </div>
 
-    <div class="libros-grid">
+    <!-- <div class="libros-grid">
       <a href="https://codepen.io/codepen-io-mark_shchupak/pen/jOmrVqX" target="_blank" class="libros libros-tile">
         <img class="libros-image"
           src="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.6435-9/118187669_1667736396735744_1852354351492205892_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Gj52YBWKEQYAX_ZehEC&_nc_ht=scontent.flwo3-1.fna&oh=d17cdcdf3ce153287c2088cff7c10b17&oe=60ECC35B"
@@ -113,7 +113,7 @@
 
     <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">Show all<i
         class="fas fa-chevron-right"></i></a>
-  </section>
+  </section> -->
 
 </body>
 

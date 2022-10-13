@@ -13,9 +13,11 @@ class LibrosController{
     }
 
     //Funcion vista crear
-    public function nuevo(){
-        require_once "view/librosMostrar.php";
+    public function crear(){
+        require_once "../view/librosMostrar.php";
     }
+
+    // Funcion crear
 
     public function guardar(){
         $ISBN = $_POST['ISBN'];
@@ -30,6 +32,7 @@ class LibrosController{
         $objLibro = new Libros_Model();
         $objLibro->create_libro($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial);
         
+        $this->index();
     }
 
 

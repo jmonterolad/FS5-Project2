@@ -1,4 +1,4 @@
-<?php include 'view/resources/includes/header.php'; ?>
+<?php include '../../resources/includes/header.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="view/css/create.css">
+    <link rel="stylesheet" href="../../css/create.css">
     <title>Ingresa un libro</title>
 </head>
 
@@ -17,7 +17,7 @@
       
         <form class="form-label form-css-label" method = "POST" action="index.php?c=Libros&a=guardar" autocomplete = "off">
           <fieldset>
-            <input id="ISBN" name="ISBN" type="text" autocomplete="off" required />
+            <input id="ISBN" name="ISBN" type="number" autocomplete="off" required />
             <label for="ISBN">ISBN</label>
           </fieldset>
           <fieldset>
