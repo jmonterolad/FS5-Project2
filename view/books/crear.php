@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/create.css">
+    <link rel="stylesheet" href="../css/create.css">
     <title>Ingresa un libro</title>
 </head>
 
@@ -13,8 +13,7 @@
     <div class="section">
         <h1>Ingresa los datos del libro</h1><br><br>
 
-        <form class="form-label form-css-label" method="POST" action="../../../index.php?c=libros&a=guardar"
-            autocomplete="off">
+        <form class="form-label form-css-label" method="POST" action="index.php?c=libros&a=guardar" autocomplete="off">
             <fieldset>
                 <input id="ISBN" name="ISBN" type="number" autocomplete="off" required />
                 <label for="ISBN">ISBN</label>

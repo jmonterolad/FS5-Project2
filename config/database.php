@@ -4,7 +4,7 @@
             $conexion = new mysqli(
                 "localhost",
                 "root",
-                "Jugada9*",
+                "",
                 "tienda_de_libros"
             );
             return $conexion;
