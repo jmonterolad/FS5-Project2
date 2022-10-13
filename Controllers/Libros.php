@@ -18,12 +18,12 @@ class LibrosController{
     }
 
     // Funcion vista manage
-    // public function manage(){
-    //     $objLibro = new Libros_Model();
-    //     $data["libros"] = $objLibro->get_Libros();
+    public function manage(){
+        $objLibro = new Libros_Model();
+        $data["libros"] = $objLibro->get_Libros();
 
-    //     require_once "view/books/manage.php";
-    // }
+        require_once "../view/books/manage.php";
+    }
 
     // Funcion vista modificar
     public function modificar_vista(){
@@ -72,7 +72,7 @@ class LibrosController{
         $editorial = $_POST['Editorial'];
 
         $objLibro = new Libros_Model();
-        $objLibro->actualizar($id,$ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial);
+        $objLibro->modificar($id,$ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial);
         
         $this->index();
     }

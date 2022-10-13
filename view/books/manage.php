@@ -47,19 +47,19 @@
                 </thead>
                 <tbody>
                 <?php
-                    foreach ($data["libros"] as $data) {
+                    foreach($data["libros"] as $data){
                         echo "<tr>";
-                        echo "<td>" . $data["ISBN"] . "</td>";
-                        echo "<td>" . $data["Titulo"] . "</td>";
-                        echo "<td>" . $data["Fecha_publicacion"] . "</td>";
-                        echo "<td>" . $data["Autor"] . "</td>";
-                        echo "<td>" . $data["Categoria"] . "</td>";
-                        echo "<td>" . $data["Reseña"] . "</td>";
-                        echo "<td>" . $data["Edicion"] . "</td>";
-                        echo "<td>" . $data["Editorial"] . "</td>";
+                        echo "<td>".$data["ISBN"]."</td>";
+                        echo "<td>".$data["Titulo"]."</td>";
+                        echo "<td>".$data["Autor"]."</td>";
+                        echo "<td>".$data["Fecha_publicacion"]."</td>";
+                        echo "<td>".$data["Categoria"]."</td>";
+                        echo "<td>".$data["Reseña"]."</td>";
+                        echo "<td>".$data["Edicion"]."</td>";
+                        echo "<td>".$data["Editorial"]."</td>";
                         echo "</tr>";
                     }
-                    ?>
+                ?>
                 </tbody>
             </table>
         </div>
