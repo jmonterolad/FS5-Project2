@@ -20,12 +20,13 @@
             return $this->libros;
         }
 
+        
 
-        //Funcion guardar consulta
-        public function create_libro($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial){
-            $result =$this->db->query("INSERT INTO libros(ISBN,Titulo,Fecha_publicacion,Autor,Categoria,Reseña,Edicion,Editorial) 
-            VALUES('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')");
+       //Funcion guardar consulta
+        public function create_libro($ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial){
+            $result = $this->db->query("INSERT INTO libros(ISBN,Titulo,Autor,Fecha_publicacion,Categoria,Reseña,Edicion,Editorial) VALUES('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')");
         }
+
 
         //funcion eliminar 
         // public function delete_libro($id) { //ID
