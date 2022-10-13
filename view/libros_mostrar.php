@@ -24,7 +24,7 @@
             </div>
             <div class="etiqueta"> 
                 <a class="link" href="#">INICIO</a>
-                <a class="link" href="#">AGREGAR</a>
+                <a class="link" href="index.php?a=Libros&c=nuevo">AGREGAR</a>
                 <a class="link" href="#">ADMINISTRAR</a>
             </div>
         </nav>
