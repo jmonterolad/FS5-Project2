@@ -11,10 +11,6 @@
 </head>
 
 <body translate="no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
 
     <header>
         <nav>
@@ -50,26 +46,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php
-                    foreach($data["libros"] as $data){
+                <?php
+                    foreach ($data["libros"] as $data) {
                         echo "<tr>";
-                        echo "<td>".$data["ISBN"]."</td>";
-                        echo "<td>".$data["Titulo"]."</td>";
-                        echo "<td>".$data["Autor"]."</td>";
-                        echo "<td>".$data["Fecha_publicacion"]."</td>";
-                        echo "<td>".$data["Categoria"]."</td>";
-                        echo "<td>".$data["Reseña"]."</td>";
-                        echo "<td>".$data["Edicion"]."</td>";
-                        echo "<td>".$data["Editorial"]."</td>";
-                        // echo "<td><a href='modificar.php?c=Libros&a=modificar&id=".$data["id"]."'>Editar</a></td>";
+                        echo "<td>" . $data["ISBN"] . "</td>";
+                        echo "<td>" . $data["Titulo"] . "</td>";
+                        echo "<td>" . $data["Fecha_publicacion"] . "</td>";
+                        echo "<td>" . $data["Autor"] . "</td>";
+                        echo "<td>" . $data["Categoria"] . "</td>";
+                        echo "<td>" . $data["Reseña"] . "</td>";
+                        echo "<td>" . $data["Edicion"] . "</td>";
+                        echo "<td>" . $data["Editorial"] . "</td>";
                         echo "</tr>";
                     }
                     ?>
-                    <tr>
-                        <td>
-                            <a href="modificar.php">Modificar</a>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
