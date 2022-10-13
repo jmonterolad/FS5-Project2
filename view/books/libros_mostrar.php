@@ -55,8 +55,8 @@
                         echo "<td>".$data["Reseña"]."</td>";
                         echo "<td>".$data["Edicion"]."</td>";
                         echo "<td>".$data["Editorial"]."</td>";
-                        echo "<td><a href='view/books/modificar.php'>Actualizar</a></td>";
-                        echo "<td><a href='view/book/eliminar.php'>Eliminar</a></td>";
+                        echo "<td><a href = 'index.php?c=Libros&a=modificar&id=".$data["Id"]."'>Editar</a></td>";
+                        echo "<td><a href = 'index.php?c=Libros&a=eliminar&id=".$data["Id"]."'>Eliminar</a></td>";
                         echo "</tr>";
                     }
                 ?>

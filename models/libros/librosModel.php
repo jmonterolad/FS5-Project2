@@ -32,7 +32,7 @@
         }
 
         // Funcion para update
-        public function modificar($id,$ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial){
+        public function modificar($id, $ISBN, $titulo, $autor, $fecha_publicacion, $categoria, $reseña, $edicion,$editorial){
             $result = $this->db->query("UPDATE libros SET ISBN = '$ISBN', Titulo = '$titulo', Autor = '$autor', Fecha_publicacion = '$fecha_publicacion', Categoria = '$categoria', Reseña = '$reseña', Edicion = '$edicion', Editorial = '$editorial' WHERE id = '$id'");
             return $result;
         }
