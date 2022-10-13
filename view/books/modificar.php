@@ -27,9 +27,11 @@
     <div class="section">
         <h1>Actualiza los datos del libro</h1><br><br>
 
-        <form id="actualizar" name="actualizar" class="form-label form-css-label" method="POST" action="../../index.php?c=Libros&a=actualizar"
+        <form id="actualizar" name="actualizar" class="form-label form-css-label" method="POST" action="index.php?c=Libros&a=actualizar"
             autocomplete="off">
+
             <input type="hidden" id="id" name="id" value="<?php echo $data['id']; ?>">
+            
             <fieldset>
                 <input id="ISBN" name="ISBN" type="number" autocomplete="off" value="<?php echo $data['libros']["ISBN"]; ?>" required />
                 <label for="ISBN">ISBN</label>
