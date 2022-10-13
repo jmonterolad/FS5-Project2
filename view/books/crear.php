@@ -5,11 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/create.css">
+    <link rel="stylesheet" href="../css/create.css">
+    <link rel="stylesheet" href="../css/header.css">
     <title>Ingresa un libro</title>
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div>
+                <a href="#" class="logo"><img src="../resources/img/Logo Kingdom_Mesa de trabajo 1.png" alt=""></a>
+            </div>
+            <div class="etiqueta">
+                <a class="link" href="../../index.php">INICIO</a>
+                <a class="link" href="#">AGREGAR</a>
+                <a class="link" href="manage.php">ADMINISTRAR</a>
+            </div>
+        </nav>
+    </header>
     <div class="section">
         <h1>Ingresa los datos del libro</h1><br><br>
 
