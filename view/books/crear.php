@@ -26,7 +26,7 @@
     <div class="section">
         <h1>Ingresa los datos del libro</h1><br><br>
 
-        <form class="form-label form-css-label" method="POST" action="../../../index.php?c=libros&a=guardar"
+        <form class="form-label form-css-label" method="POST" action="../../index.php?c=Libros&a=guardar"
             autocomplete="off">
             <fieldset>
                 <input id="ISBN" name="ISBN" type="number" autocomplete="off" required />
@@ -60,9 +60,10 @@
                 <input id="Editorial" name="Editorial" type="text" autocomplete="off" required />
                 <label for="Editorial">Editorial</label>
             </fieldset>
+            <br> <br>
 
             <div class="wrap">
-                <input class="btn" type="submit" value="Submite">
+                <input class="btn" type="submit" value="send" name="Submit">
             </div>
         </form>
     </div>

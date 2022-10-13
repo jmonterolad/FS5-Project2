@@ -20,26 +20,21 @@
             return $this->libros;
         }
 
-        
-
-       //Funcion guardar consulta
-        public function create_libro($ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial){
-            $result = $this->db->query("INSERT INTO libros(ISBN,Titulo,Autor,Fecha_publicacion,Categoria,Reseña,Edicion,Editorial) VALUES('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')");
+        // Create a base de datos
+        public function create_libro($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial){
+            $query = "INSERT INTO libros (ISBN,Titulo,Fecha_publicacion,Autor,Categoria,Reseña,Edicion,Editorial) VALUES ('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')";
+            $result = $this->db->query($query);
+            if($result){
+                echo "Libro agregado";
+            }else{
+                echo "Error al agregar libro";
+            }
         }
 
-
-        //funcion eliminar 
-        // public function delete_libro($id) { //ID
-        //     $query = "DELETE FROM libros where ID = ${id}";
-        //     $resultado = mysql_query($db, $query);
-    
-    
-        // }
-
-    
-
-    
-    
+        // Funcion para update
+        public function actualizar($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial){
+            $result = $this->db->query("UPDATE libros SET ISBN = '$ISBN', Titulo = '$titulo', Fecha_publicacion = '$fecha_publicacion', Autor = '$autor', Categoria = '$categoria', Reseña = '$reseña', Edicion = '$edicion', Editorial = '$editorial' WHERE ISBN = '$ISBN'");
+        }
     }
 
      
