@@ -12,82 +12,52 @@ body {
   background-color: #35858b;
 }
 
-h1,
-h2 {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 6rem;
-  color: rgb(10, 10, 10);
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-.libros-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: #35858b;
-}
-
-.libros-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-.libros-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+.hero{
+  background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9vayUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+  padding-top: 120px;
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: static;
+  overflow: hidden;
+  
 }
 
-@media (max-width: 30.625em) {
-  .libros-section {
-    padding: 6rem 1rem;
-  }
-
-  .libros-grid {
-    grid-template-columns: 1fr;
-  }
+.conte{
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
-.libros {
-  background: var(--main-gray);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+.textos-hero{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+.hero h1{
+  font-size: 10rem;
+  padding-bottom: 100px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
+.sv-hero{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-.btn-show-all {
-  font-size: 2rem;
-  background: var(--main-gray);
-  transition: background 0.3s ease-out;
+.container{
+  display: flex;
+  font-size: 10px;
 }
 
-.btn-show-all:hover {
-  background: var(--main-red);
+.libros{
+
 }
 
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
 
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
