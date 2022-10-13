@@ -5,15 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <title>Manage</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body translate="no">
 
-
-    <!-- Navbar -->
     <header>
         <nav>
             <div>
@@ -37,12 +35,14 @@
                     <tr>
                         <th>ISBN</th>
                         <th>Titulo</th>
-                        <th>Fecha de publicacion</th>
                         <th>Autor</th>
+                        <th>Fecha de publicacion</th>
                         <th>Categoria</th>
                         <th>Reseña</th>
                         <th>Edicion</th>
                         <th>Editorial</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -34,12 +34,12 @@
                 <label for="Titulo">Titulo</label>
             </fieldset>
             <fieldset>
-                <input id="Fecha_publicacion" name="Fecha_publicacion" type="text" autocomplete="off" required />
-                <label for="Fecha_publicacion">Fecha publicacion</label>
-            </fieldset>
-            <fieldset>
                 <input id="Autor" name="Autor" type="text" autocomplete="off" required />
                 <label for="Autor">Autor</label>
+            </fieldset>
+            <fieldset>
+                <input id="Fecha_publicacion" name="Fecha_publicacion" type="text" autocomplete="off" required />
+                <label for="Fecha_publicacion">Fecha publicacion</label>
             </fieldset>
             <fieldset>
                 <input id="Categoria" name="Categoria" type="text" autocomplete="off" required />

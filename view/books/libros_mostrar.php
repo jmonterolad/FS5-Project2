@@ -35,8 +35,8 @@
                     <tr>
                         <th>ISBN</th>
                         <th>Titulo</th>
-                        <th>Fecha de publicacion</th>
                         <th>Autor</th>
+                        <th>Fecha de publicacion</th>
                         <th>Categoria</th>
                         <th>Reseña</th>
                         <th>Edicion</th>
@@ -49,8 +49,8 @@
                         echo "<tr>";
                         echo "<td>".$data["ISBN"]."</td>";
                         echo "<td>".$data["Titulo"]."</td>";
-                        echo "<td>".$data["Fecha_publicacion"]."</td>";
                         echo "<td>".$data["Autor"]."</td>";
+                        echo "<td>".$data["Fecha_publicacion"]."</td>";
                         echo "<td>".$data["Categoria"]."</td>";
                         echo "<td>".$data["Reseña"]."</td>";
                         echo "<td>".$data["Edicion"]."</td>";
@@ -65,6 +65,7 @@
                 </tbody>
             </table>
         </div>
+    </section>
 </body>
 
 </html>
