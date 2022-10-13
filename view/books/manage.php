@@ -1,37 +1,70 @@
-<?php 
-include "../resources/includes/header.php";
-?>
-<main class="contenedor seccion">
-    <h1>Administrador de libros</h1>
-    <div class="table-responsive">
-        <table class="table table-primary">
-            <thead>
-                <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">TITULO</th>
-                    <th scope="col">IMAGEN</th>
-                    <th scope="col">EDITORIAL</th>
-                    <th scope="col">AUTOR</th>
-                    <th scope="col">ACCIONES</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="">
-                    <td scope="row">001</td>
-                    <td scope="row">EL PRINCIPITO</td>
-                    <td scope="row">001</td>
-                    <td scope="row">001</td>
-                    <td scope="row">001</td>
-                    <td scope="row">001</td>
+<!DOCTYPE html>
+<html lang="en">
 
-                </tr>
-                <tr class="">
-                    <td scope="row">Item</td>
-                    <td>Item</td>
-                    <td>Item</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
 
-</main>
+<body translate="no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
+
+    <header>
+        <nav>
+            <div>
+                <a href="#" class="logo"><img src="../resources/img/Logo Kingdom_Mesa de trabajo 1.png" alt=""></a>
+            </div>
+            <div class="etiqueta">
+                <a class="link" href="../../index.php">INICIO</a>
+                <a class="link" href="crear.php">AGREGAR</a>
+                <a class="link" href="#">ADMINISTRAR</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="libros-id" class="libros-section">
+        <h2 class="libros-section-header">Inventario de libros</h2>
+
+        <div class="libros-grid">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Titulo</th>
+                        <th>Fecha de publicacion</th>
+                        <th>Autor</th>
+                        <th>Categoria</th>
+                        <th>Reseña</th>
+                        <th>Edicion</th>
+                        <th>Editorial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    foreach($data["libros"] as $data){
+                        echo "<tr>";
+                        echo "<td>".$data["ISBN"]."</td>";
+                        echo "<td>".$data["Titulo"]."</td>";
+                        echo "<td>".$data["Fecha_publicacion"]."</td>";
+                        echo "<td>".$data["Autor"]."</td>";
+                        echo "<td>".$data["Categoria"]."</td>";
+                        echo "<td>".$data["Reseña"]."</td>";
+                        echo "<td>".$data["Edicion"]."</td>";
+                        echo "<td>".$data["Editorial"]."</td>";
+                        echo "</tr>";
+                    }
+                ?>
+                </tbody>
+            </table>
+        </div>
+</body>
+
+</html>

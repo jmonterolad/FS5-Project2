@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="view/css/index.css">
-  <link rel="stylesheet" href="view/css/header.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="view/css/index.css">
+    <link rel="stylesheet" href="view/css/header.css">
 </head>
 
 <body translate="no">
@@ -17,22 +16,22 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
 
-  <header>
+    <header>
         <nav>
             <div>
                 <a href="#" class="logo"><img src="view/resources/img/Logo Kingdom_Mesa de trabajo 1.png" alt=""></a>
             </div>
-            <div class="etiqueta"> 
+            <div class="etiqueta">
                 <a class="link" href="#">INICIO</a>
-                <a class="link" href="index.php?a=Libros&c=nuevo">AGREGAR</a>
-                <a class="link" href="#">ADMINISTRAR</a>
+                <a class="link" href="view/books/crear.php">AGREGAR</a>
+                <a class="link" href="view/books/manage.php">ADMINISTRAR</a>
             </div>
         </nav>
     </header>
 
 
-  <section id="libros-id" class="libros-section">
-    <h2 class="libros-section-header">Inventario de libros</h2>
+    <section id="libros-id" class="libros-section">
+        <h2 class="libros-section-header">Inventario de libros</h2>
 
         <div class="libros-grid">
             <table>
@@ -63,10 +62,9 @@
                         echo "</tr>";
                     }
                 ?>
-            </tbody>
-        </table>
-    </div>
+                </tbody>
+            </table>
+        </div>
 </body>
 
 </html>
-<?php include 'view/resources/includes/footer.php'; ?>
