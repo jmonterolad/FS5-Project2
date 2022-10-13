@@ -20,16 +20,16 @@
             <div class="etiqueta">
                 <a class="link" href="#">INICIO</a>
                 <a class="link" href="view/books/crear.php">AGREGAR</a>
-                <a class="link" href="view/books/manage.php">ADMINISTRAR</a>
+                <!-- <a class="link" href="view/books/manage.php">ADMINISTRAR</a> -->
             </div>
         </nav>
-        
+
     </header>
     <section class="hero">
         <div class="conte">
-        <div class="textos-hero">
-            <h1>BIENVENIDOS</h1>
-        </div>
+            <div class="textos-hero">
+                <h1>BIENVENIDOS</h1>
+            </div>
         </div>
         <div class="svg-hero" style="height: 150px; overflow: hidden;">
             <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -40,7 +40,7 @@
     </section>
 
 
-    <section  class="container">
+    <section class="container">
         <div class="libros">
             <table border="1px">
                 <thead>
@@ -53,6 +53,8 @@
                         <th>Reseña</th>
                         <th>Edicion</th>
                         <th>Editorial</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
