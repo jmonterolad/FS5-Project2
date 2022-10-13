@@ -23,7 +23,7 @@
         
 
        //Funcion guardar consulta
-        public function create_libro($ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial){
+        public function create_libro($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial){
             $result = $this->db->query("INSERT INTO libros(ISBN,Titulo,Autor,Fecha_publicacion,Categoria,Reseña,Edicion,Editorial) VALUES('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')");
         }
 

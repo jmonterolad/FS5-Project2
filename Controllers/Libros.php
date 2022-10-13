@@ -20,15 +20,15 @@ class LibrosController{
     public function guardar(){
         $ISBN = $_POST['ISBN'];
         $titulo = $_POST['Titulo'];
-        $autor = $_POST['Autor'];
         $fecha_publicacion = $_POST['Fecha_publicacion'];
+        $autor = $_POST['Autor'];
         $categoria = $_POST['Categoria'];
         $reseña = $_POST['Reseña'];
         $edicion = $_POST['Edicion'];
         $editorial = $_POST['Editorial'];
 
         $objLibro = new Libros_Model();
-        $objLibro->create_libro($ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial);
+        $objLibro->create_libro($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial);
         
         $this->index();
     }
