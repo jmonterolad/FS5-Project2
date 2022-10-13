@@ -21,8 +21,8 @@
         }
 
         // Create a base de datos
-        public function create_libro($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial){
-            $query = "INSERT INTO libros (ISBN,Titulo,Fecha_publicacion,Autor,Categoria,Reseña,Edicion,Editorial) VALUES ('$ISBN','$titulo','$fecha_publicacion','$autor','$categoria','$reseña','$edicion','$editorial')";
+        public function create_libro($ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial){
+            $query = "INSERT INTO libros (ISBN,Titulo,Autor,Fecha_publicacion,Categoria,Reseña,Edicion,Editorial) VALUES ('$ISBN','$titulo','$autor','$fecha_publicacion','$categoria','$reseña','$edicion','$editorial')";
             $result = $this->db->query($query);
             if($result){
                 echo "Libro agregado";
@@ -32,8 +32,23 @@
         }
 
         // Funcion para update
-        public function actualizar($ISBN,$titulo,$fecha_publicacion,$autor,$categoria,$reseña,$edicion,$editorial){
-            $result = $this->db->query("UPDATE libros SET ISBN = '$ISBN', Titulo = '$titulo', Fecha_publicacion = '$fecha_publicacion', Autor = '$autor', Categoria = '$categoria', Reseña = '$reseña', Edicion = '$edicion', Editorial = '$editorial' WHERE ISBN = '$ISBN'");
+        public function actualizar($id,$ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial){
+            $result = $this->db->query("UPDATE libros SET ISBN = '$ISBN', Titulo = '$titulo', Autor = '$autor', Fecha_publicacion = '$fecha_publicacion', Categoria = '$categoria', Reseña = '$reseña', Edicion = '$edicion', Editorial = '$editorial' WHERE id = '$id'");
+            return $result;
+        }
+
+        // Registro unico
+        public function get_uniqueRow($id){
+            $query = "SELECT * FROM libros WHERE id = '$id' LIMIT 1";
+            $result = $this->db->query($query);
+            $row = $result->fetch_assoc();
+            return $row;
+        }
+
+        // Funcion para eliminar
+        public function eliminar($id){
+            $result = $this->db->query("DELETE FROM libros WHERE id = '$id'");
+            return $result;
         }
     }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
+    <title>Manage</title>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
@@ -16,8 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
 
-
-    <!-- Navbar -->
     <header>
         <nav>
             <div>
@@ -41,12 +39,14 @@
                     <tr>
                         <th>ISBN</th>
                         <th>Titulo</th>
-                        <th>Fecha de publicacion</th>
                         <th>Autor</th>
+                        <th>Fecha de publicacion</th>
                         <th>Categoria</th>
                         <th>Reseña</th>
                         <th>Edicion</th>
                         <th>Editorial</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,15 +55,21 @@
                         echo "<tr>";
                         echo "<td>".$data["ISBN"]."</td>";
                         echo "<td>".$data["Titulo"]."</td>";
-                        echo "<td>".$data["Fecha_publicacion"]."</td>";
                         echo "<td>".$data["Autor"]."</td>";
+                        echo "<td>".$data["Fecha_publicacion"]."</td>";
                         echo "<td>".$data["Categoria"]."</td>";
                         echo "<td>".$data["Reseña"]."</td>";
                         echo "<td>".$data["Edicion"]."</td>";
                         echo "<td>".$data["Editorial"]."</td>";
+                        // echo "<td><a href='modificar.php?c=Libros&a=modificar&id=".$data["id"]."'>Editar</a></td>";
                         echo "</tr>";
                     }
-                ?>
+                    ?>
+                    <tr>
+                        <td>
+                            <a href="modificar.php">Modificar</a>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>

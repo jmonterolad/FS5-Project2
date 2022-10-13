@@ -7,7 +7,6 @@
             $archivoControlador = 'Controllers/'.CONTROLADOR_PRINCIPAL.'.php';
 
         }
-        //echo $archivoControlador;
         require_once $archivoControlador;
  
         $control = new $nombreControlador;
