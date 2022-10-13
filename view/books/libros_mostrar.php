@@ -23,14 +23,26 @@
                 <a class="link" href="view/books/manage.php">ADMINISTRAR</a>
             </div>
         </nav>
+        
     </header>
+    <section class="hero">
+        <div class="conte">
+        <div class="textos-hero">
+            <h1>BIENVENIDOS</h1>
+        </div>
+        </div>
+        <div class="svg-hero" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.99 C150.00,150.00 349.21,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #35858b;"></path>
+            </svg>
+        </div>
+    </section>
 
 
-    <section id="libros-id" class="libros-section">
-        <h2 class="libros-section-header">Inventario de libros</h2>
-
-        <div class="libros-grid">
-            <table>
+    <section  class="container">
+        <div class="libros">
+            <table border="1px">
                 <thead>
                     <tr>
                         <th>ISBN</th>
