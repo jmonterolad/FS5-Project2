@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/create.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="view/css/create.css">
+    <link rel="stylesheet" href="view/css/header.css">
     <title>Edita un libro</title>
 </head>
 
@@ -14,7 +14,7 @@
     <header>
         <nav>
             <div>
-                <a href="#" class="logo"><img src="../resources/img/Logo Kingdom_Mesa de trabajo 1.png" alt=""></a>
+                <a href="#" class="logo"><img src="view/resources/img/Logo Kingdom_Mesa de trabajo 1.png" alt=""></a>
             </div>
             <div class="etiqueta">
                 <a class="link" href="../../index.php">INICIO</a>
