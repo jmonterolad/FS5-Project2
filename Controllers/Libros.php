@@ -14,7 +14,7 @@ class LibrosController{
 
     //Funcion vista crear
     public function crear(){
-        require_once "../view/librosMostrar.php";
+        require_once "view/books/libros_Mostrar.php";
     }
 
     // Funcion crear
@@ -33,6 +33,15 @@ class LibrosController{
         $objLibro->create_libro($ISBN,$titulo,$autor,$fecha_publicacion,$categoria,$reseña,$edicion,$editorial);
         
         $this->index();
+    }
+
+    // Funcion de editar y eliminar
+
+    public function editar(){
+        $objLibro = new Libros_Model();
+        $data["libros"] = $objLibro->get_Libros();
+
+        require_once "view/books/manage.php";
     }
 
 
