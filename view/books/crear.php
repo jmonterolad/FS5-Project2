@@ -10,6 +10,18 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div>
+                <a href="#" class="logo"><img src="../resources/img/Logo Kingdom_Mesa de trabajo 1.png" alt=""></a>
+            </div>
+            <div class="etiqueta">
+                <a class="link" href="../../index.php">INICIO</a>
+                <a class="link" href="#">AGREGAR</a>
+                <a class="link" href="manage.php">ADMINISTRAR</a>
+            </div>
+        </nav>
+    </header>
     <div class="section">
         <h1>Ingresa los datos del libro</h1><br><br>
 
