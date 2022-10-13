@@ -4,7 +4,7 @@
             $conexion = new mysqli(
                 "localhost",
                 "root",
-                "",
+                "Password1234",
                 "tienda_de_libros"
             );
             return $conexion;
